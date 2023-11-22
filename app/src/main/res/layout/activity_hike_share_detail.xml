@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_AddUser">
+
+    <LinearLayout
+        android:id="@+id/hikeDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/nameHikeConfirmTv"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#C1C1C1"
+            android:drawableStart="@drawable/ic_text_fields"
+            android:drawablePadding="8dp"
+            android:hint="Name of Hike"
+            android:textColor="@color/black"
+            android:textColorHint="@color/txt_Hint"
+            android:textSize="36dp" />
+
+        <TextView
+            android:id="@+id/locationConfirmTv"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="8dp"
+            android:hint="Location"
+            android:textColor="@color/black"
+            android:textColorHint="@color/txt_Hint"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/lengthHikeConfirmTv"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:drawableStart="@drawable/ic_hike"
+            android:drawablePadding="8dp"
+            android:hint="Length the Hike"
+            android:textColor="@color/black"
+            android:textColorHint="@color/txt_Hint"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/descriptionConfirmTv"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_describe"
+            android:drawablePadding="8dp"
+            android:hint="Description"
+            android:textColor="@color/black"
+            android:textColorHint="@color/txt_Hint"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/parking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Parking Available: "
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Level of Difficulty: "
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="List of observation"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/observationRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hikeDetail"
+        tools:listitem="@layout/row_observation_share_item"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</RelativeLayout>

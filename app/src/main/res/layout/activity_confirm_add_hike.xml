@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_AddUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="13dp">
+
+        <TextView
+            android:id="@+id/nameHikeConfirmTv"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:textColorHint="@color/txt_Hint"
+            android:textColor="@color/black"
+            android:backgroundTint="#C1C1C1"
+            android:textSize="20dp"
+            android:drawableStart="@drawable/ic_text_fields"
+            android:drawablePadding="8dp"
+            android:hint="Name of Hike"/>
+        <TextView
+            android:id="@+id/locationConfirmTv"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/txt_Hint"
+            android:layout_marginBottom="15dp"
+            android:textSize="20dp"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"
+            android:hint="Location" />
+
+        <TextView
+            android:id="@+id/lengthHikeConfirmTv"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:textColorHint="@color/txt_Hint"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:drawableStart="@drawable/ic_hike"
+            android:drawablePadding="8dp"
+            android:hint="Length the Hike" />
+
+        <TextView
+            android:id="@+id/descriptionConfirmTv"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/txt_Hint"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:drawableStart="@drawable/ic_describe"
+            android:drawablePadding="8dp"
+            android:hint="Description" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:text="Parking Available: "/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/parkingYesConfirmRdBtn"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Yes"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/parkingNoConfirmRdBtn"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:text="No"
+                android:textSize="15dp"
+                android:textColor="@color/black" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:text="Level of Difficulty: "
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/levelLowConfirmRdBtn"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Low"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/levelNormalConfirmRdBtn"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:text="Normal"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/levelHighConfirmRdBtn"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:text="High"
+                android:textSize="15dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ripple_effect"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center_horizontal"
+            app:backgroundTint="@color/lavender"
+            android:textStyle="bold"
+            android:text="Confirm" />
+
+    </LinearLayout>
+
+</RelativeLayout>

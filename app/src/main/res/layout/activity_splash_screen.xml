@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relMain"
+    android:visibility="gone"
+    tools:context=".Splash_Screen">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animation_screen"/>
+    <TextView
+        android:id="@+id/txtHiking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="HIKING"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/lavender"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/txtTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="TRACK"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/lavender"
+        android:layout_marginLeft="80dp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_AddUser">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageDetailIv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:stretchColumns="2">
+            <TableRow>
+                <TextView
+                    android:text="Observation: "
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/obserNameDetailTv"
+                    android:textSize="20dp"
+
+                    android:textStyle="bold"
+                    android:padding="6.50dp"
+                    android:layout_marginStart="13dp"
+                    android:textColor="@color/txt_Hint"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Additional Comment:"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/obserCommentDetailTv"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="6.50dp"
+                    android:layout_marginStart="13.50dp"
+                    android:textColor="@color/txt_Hint"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Time of Observation: "
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/obserTimeDetailTv"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="6.50dp"
+                    android:layout_marginStart="13dp"
+                    android:textColor="@color/txt_Hint"
+                    />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</RelativeLayout>

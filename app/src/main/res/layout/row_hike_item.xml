@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="6.50dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/lavender">
+
+            <TextView
+                android:id="@+id/nameHikeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Name the hike" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="99dp"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="289dp"
+            android:layout_marginBottom="155dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Location" />
+
+        <TextView
+            android:id="@+id/locationTv"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginBottom="145dp"
+            android:text="Location"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="41dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="218dp"
+            android:layout_marginBottom="90dp"
+            android:text="Length the hike"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lengthHikeTv"
+            android:layout_width="191dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="195dp"
+            android:layout_marginBottom="70dp"
+            android:text="Length the hike"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="33dp"
+            android:layout_marginBottom="155dp"
+            android:text="Date of the hike"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dateHikeTv"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="145dp"
+            android:text="Date of the hike"
+            android:textSize="17dp" />
+
+        <ImageButton
+            android:id="@+id/deleteIbtn"
+            android:layout_width="41dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ripple_btndelete"
+            android:backgroundTint="@color/red"
+            app:srcCompat="@drawable/baseline_delete_24" />
+
+        <ImageButton
+            android:id="@+id/editIbtn"
+            android:layout_width="41dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ripple_btnedit"
+            android:backgroundTint="@color/blue"
+            app:srcCompat="@drawable/baseline_mode_edit_outline_24" />
+
+        <ImageButton
+            android:id="@+id/detailIbtn"
+            android:layout_width="41dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ripple_btnview"
+            android:backgroundTint="@color/green"
+            app:srcCompat="@drawable/baseline_view_eye" />
+        <ImageButton
+            android:id="@+id/shareIbtn"
+            android:layout_width="41dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="170dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ripple_btnview"
+            android:backgroundTint="@color/purple_200"
+            app:srcCompat="@drawable/baseline_attach_file_24" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

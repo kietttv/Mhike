@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_AddUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="13dp">
+
+        <ImageView
+            android:id="@+id/imageObserImgV"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher" />
+
+        <EditText
+            android:id="@+id/nameObserEdt"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C1C1C1"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_text_fields"
+            android:drawablePadding="8dp"
+            android:hint="Observation"
+            android:textColorHint="@color/txt_Hint" />
+
+        <EditText
+            android:id="@+id/commentObserEdt"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C1C1C1"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_describe"
+            android:drawablePadding="8dp"
+            android:hint="Additional comment"
+            android:textColorHint="@color/txt_Hint" />
+
+        <Button
+            android:id="@+id/saveObserBtn"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ripple_effect"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:text="Save"
+            android:textStyle="bold"
+            app:backgroundTint="@color/lavender"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

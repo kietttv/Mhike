@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_AddUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="13dp">
+
+        <EditText
+            android:id="@+id/nameHikeEdt"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C1C1C1"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_text_fields"
+            android:drawablePadding="8dp"
+            android:hint="Name of Hike"
+            android:textColorHint="@color/txt_Hint" />
+
+        <EditText
+            android:id="@+id/locationEdt"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C1C1C1"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="8dp"
+            android:hint="Location"
+            android:textColorHint="@color/txt_Hint" />
+
+        <EditText
+            android:id="@+id/lengthHikeEdt"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C1C1C1"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_hike"
+            android:drawablePadding="8dp"
+            android:hint="Length the Hike"
+            android:inputType="number"
+            android:textColorHint="@color/txt_Hint" />
+
+        <EditText
+            android:id="@+id/descriptionEdt"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C1C1C1"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_describe"
+            android:drawablePadding="8dp"
+            android:hint="Description"
+            android:textColorHint="@color/txt_Hint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Parking Available: "
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/parkingYesRdBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:checked="true"
+                android:text="Yes"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/parkingNoRdBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="No"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Level of Difficulty: "
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/levelLowRdBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:checked="true"
+                android:text="Low"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/levelNormalRdBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Normal"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/levelHighRdBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="High"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ripple_effect"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            app:backgroundTint="@color/lavender"
+            android:text="Save"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

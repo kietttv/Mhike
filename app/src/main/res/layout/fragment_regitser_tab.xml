@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".RegisterTabFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:src="@drawable/signimg"/>
+
+                <EditText
+                    android:id="@+id/register_email"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edittext_bkg"
+                    android:drawableLeft="@drawable/ic_mail"
+                    android:drawablePadding="8dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp" />
+
+                <EditText
+                    android:id="@+id/register_name"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edittext_bkg"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:drawablePadding="8dp"
+                    android:hint="Name"
+                    android:padding="8dp"
+                    />
+
+
+                <EditText
+                    android:id="@+id/register_pass"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edittext_bkg"
+                    android:drawableLeft="@drawable/ic_lock"
+                    android:drawablePadding="8dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp" />
+                <ImageView
+                    android:id="@+id/showHidePass"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_offeyes"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginBottom="13dp"
+                    />
+
+                <EditText
+                    android:id="@+id/register_comf_pass"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edittext_bkg"
+                    android:drawableLeft="@drawable/baseline_password_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp" />
+                <ImageView
+                    android:id="@+id/showHideConfirPass"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_offeyes"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginBottom="13dp"
+                    />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:padding="8dp"
+                    android:text="Gender:"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:drawableLeft="@drawable/baseline_male_24"
+                        android:drawablePadding="5dp"
+                        android:text="Male"
+                        android:textSize="18dp"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_female_24"
+                        android:drawablePadding="5dp"
+                        android:text="Female"
+                        android:textSize="18dp" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/txt_Dob"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:drawableLeft="@drawable/ic_date"
+                    android:drawablePadding="8dp"
+                    android:padding="8dp"
+                    android:text="Date of Birth"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_Dob"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:text="Choose Date"
+                    android:backgroundTint="@color/lavender"
+                    />
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/signup_button"
+                    android:textSize="18sp"
+                    android:text="Register"
+                    android:backgroundTint="@color/lavender"
+                    app:cornerRadius = "30dp"/>
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:textSize="18sp"
+                    android:text="Register"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/lavender"
+                    app:cornerRadius = "30dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

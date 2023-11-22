@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#009691"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="6.50dp">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <ImageView
+            android:id="@+id/obserImageIv"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_launcher_background"
+            app:civ_border_color="@color/white" />
+
+        <TextView
+            android:id="@+id/obserNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/obserImageIv"
+            android:text="Observation Name"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/obserCommentTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginBottom="30dp"
+            android:layout_toEndOf="@+id/obserImageIv"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/obserDateTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginBottom="60dp"
+            android:layout_toEndOf="@+id/obserImageIv"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
